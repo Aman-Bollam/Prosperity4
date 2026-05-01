@@ -16,7 +16,6 @@ Placed as an IMC Prosperity 4 finalist, developing algorithmic trading strategie
 - Used backtesting workflows to compare strategy performance across trading days
 - Organized round-specific strategy files, research scripts, and market data
 - Tested strategies using both standard and Monte Carlo-style backtesting workflows
-- Placed in the top 12.5% as an IMC Prosperity 4 finalist through iterative strategy development and backtesting
   
 ## Tech Stack
 
