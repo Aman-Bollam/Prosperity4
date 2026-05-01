@@ -4,14 +4,20 @@ Research and strategy development repository for the IMC Prosperity trading comp
 
 This repo includes trading algorithms, market analysis scripts, backtesting experiments, and strategy variants developed across multiple rounds of the competition.
 
+## Competition Result
+
+Placed as an IMC Prosperity 4 finalist, developing algorithmic trading strategies across multiple rounds of simulated exchange data.
+
 ## Highlights
 
+- Placed in the roughly around top 12.5% as an IMC Prosperity 4 finalist through iterative strategy development and backtesting
 - Built multiple algorithmic trading strategies for simulated exchange data
 - Analyzed order book behavior, price trends, and product-specific market patterns
 - Used backtesting workflows to compare strategy performance across trading days
 - Organized round-specific strategy files, research scripts, and market data
 - Tested strategies using both standard and Monte Carlo-style backtesting workflows
-
+- Placed in the top 12.5% as an IMC Prosperity 4 finalist through iterative strategy development and backtesting
+  
 ## Tech Stack
 
 Python, Pandas, NumPy, IMC Prosperity Backtesting Tools
