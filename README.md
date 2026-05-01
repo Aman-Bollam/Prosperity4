@@ -1,7 +1,19 @@
 # Prosperity 4
 
-IMC Prosperity 4 trading algorithm.
+Research and strategy development repo for the IMC Prosperity trading competition.
 
+This repo includes trading algorithms, market analysis scripts, backtesting experiments, and strategy variants developed across multiple rounds of the competition.
+
+## Highlights
+
+- Built multiple algorithmic trading strategies for simulated exchange data
+- Analyzed order book behavior, price trends, and product-specific market patterns
+- Used backtesting workflows to compare strategy performance across trading days
+- Organized round-specific strategy files, research scripts, and market data
+
+## Tech Stack
+
+Python, Pandas, NumPy, IMC Prosperity Backtesting Tools
 ## Dependencies
 
 - Python 3.9+
