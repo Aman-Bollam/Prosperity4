@@ -1,0 +1,58 @@
+/* ── Base ── */
+* { box-sizing: border-box; }
+body { background: #0d0d0d; margin: 0; font-family: ui-monospace, 'JetBrains Mono', 'Fira Code', monospace; }
+
+/* ── Dropdowns ── */
+.Select-control,
+.Select-menu-outer,
+.VirtualizedSelectFocusedOption,
+.VirtualizedSelectOption { background-color: #1a1a1a !important; }
+
+.Select-value-label,
+.Select-placeholder,
+.Select-input input,
+.Select--single > .Select-control .Select-value { color: #e0e0e0 !important; }
+
+.Select-arrow { border-top-color: #666 !important; }
+.Select-control { border-color: #333 !important; }
+.Select-control:hover { border-color: #555 !important; }
+
+/* new Dash Select */
+.dash-dropdown .Select-control { background: #1a1a1a !important; border: 1px solid #333 !important; }
+.dash-dropdown .Select-value-label { color: #e0e0e0 !important; }
+.dash-dropdown .Select-placeholder { color: #666 !important; }
+.dash-dropdown .Select-menu-outer { background: #1a1a1a !important; border: 1px solid #333 !important; z-index: 9999; }
+.dash-dropdown .VirtualizedSelectOption { color: #ccc !important; background: #1a1a1a !important; }
+.dash-dropdown .VirtualizedSelectFocusedOption { background: #2a2a2a !important; color: #fff !important; }
+.dash-dropdown .Select-arrow-zone { color: #666 !important; }
+.dash-dropdown .is-focused .Select-control { border-color: #555 !important; }
+
+/* ── Checkboxes ── */
+.dash-checklist label,
+.dash-checklist span { color: #c0c0c0 !important; font-size: 12px !important; }
+.dash-checklist { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 4px; }
+
+/* ── Sliders ── */
+.rc-slider-track { background-color: #5b5bd6 !important; }
+.rc-slider-handle { border-color: #5b5bd6 !important; background: #5b5bd6 !important; }
+.rc-slider-rail { background-color: #2a2a2a !important; }
+.rc-slider-mark-text { color: #666 !important; font-size: 10px !important; }
+.rc-slider-dot { border-color: #333 !important; background: #1a1a1a !important; }
+.rc-slider-dot-active { border-color: #5b5bd6 !important; }
+
+/* Range slider handles */
+.rc-slider-handle-1, .rc-slider-handle-2 {
+    border-color: #5b5bd6 !important;
+    background: #5b5bd6 !important;
+    opacity: 1 !important;
+}
+
+/* ── Tooltip ── */
+.rc-slider-tooltip-inner { background: #222 !important; color: #ccc !important; font-size: 11px !important; }
+.rc-slider-tooltip-arrow { border-top-color: #222 !important; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }

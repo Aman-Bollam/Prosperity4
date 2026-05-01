@@ -1,0 +1,33 @@
+# Secrets / local config
+.env
+.env.*
+*.pem
+*.key
+credentials.*
+secrets.*
+tokens.*
+
+# Generated logs / submissions
+*.log
+final_submission/
+backtests/
+imc_logs/
+imc-round1/research/results/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.venv*/
+
+# macOS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Claude / project local
+CLAUDE.md
+.claude/
+*.jac
