@@ -10,7 +10,7 @@ Placed as an IMC Prosperity 4 finalist, developing algorithmic trading strategie
 
 ## Highlights
 
-- Placed in the roughly around top 12.5% as an IMC Prosperity 4 finalist through iterative strategy development and backtesting
+- Placed in as IMC Prosperity 4 finalist through iterative strategy development and backtesting
 - Built multiple algorithmic trading strategies for simulated exchange data
 - Analyzed order book behavior, price trends, and product-specific market patterns
 - Used backtesting workflows to compare strategy performance across trading days
