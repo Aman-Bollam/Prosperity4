@@ -1,6 +1,6 @@
 # Prosperity 4
 
-Research and strategy development repo for the IMC Prosperity trading competition.
+Research and strategy development repository for the IMC Prosperity trading competition.
 
 This repo includes trading algorithms, market analysis scripts, backtesting experiments, and strategy variants developed across multiple rounds of the competition.
 
@@ -10,26 +10,34 @@ This repo includes trading algorithms, market analysis scripts, backtesting expe
 - Analyzed order book behavior, price trends, and product-specific market patterns
 - Used backtesting workflows to compare strategy performance across trading days
 - Organized round-specific strategy files, research scripts, and market data
+- Tested strategies using both standard and Monte Carlo-style backtesting workflows
 
 ## Tech Stack
 
 Python, Pandas, NumPy, IMC Prosperity Backtesting Tools
+
 ## Dependencies
 
 - Python 3.9+
 - [uv](https://github.com/astral-sh/uv) — `curl -LsSf https://astral.sh/uv/install.sh | sh`
-- Rust/Cargo (for Monte Carlo backtester) — `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+- Rust/Cargo, only needed for the Monte Carlo backtester — `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
 ## Setup
 
-Clone with submodules or clone the backtester repos separately into the project root:
+This repository contains my strategy code, market data, and analysis scripts. Some workflows depend on external IMC Prosperity backtesting tools that should be cloned separately into the project root if you want to reproduce those runs.
+
+Expected local setup:
 
 ```text
 Prosperity4/
-├── kevin-fu1-backtester/          # standard backtester
-├── chrispy-roberts-backtester/    # Monte Carlo backtester
-└── imc-round1/                    # prosperity4btest backtester workspace
+├── kevin-fu1-backtester/          # optional external standard backtester
+├── chrispy-roberts-backtester/    # optional external Monte Carlo backtester
+├── imc-round1/                    # Round 1 strategy workspace
+├── round4/                        # Round 4 strategy workspace
+└── Tutorial/                      # tutorial data and starter experiments
 ```
+
+The external backtester folders are intentionally not included in this repo. Clone them separately if you want to use those workflows.
 
 ### Standard backtester
 
@@ -62,8 +70,10 @@ pip install -U prosperity4btest
 
 ## Running
 
+### Standard backtester
+
 ```bash
-# Standard backtest (round 0, both days)
+# Standard backtest, round 0, both days
 ./run.sh
 
 # Standard backtest, no visualizer
@@ -71,11 +81,15 @@ pip install -U prosperity4btest
 
 # Standard backtest, day -2 only
 ./run.sh 0 --day -2
+```
 
-# Monte Carlo (100 sessions)
+### Monte Carlo backtester
+
+```bash
+# Monte Carlo, 100 sessions
 ./run.sh mc
 
-# Monte Carlo (1000 sessions)
+# Monte Carlo, 1000 sessions
 ./run.sh mc heavy
 ```
 
@@ -89,8 +103,26 @@ prosperity4btest trader.py 1 --merge-pnl
 prosperity4btest traders/trader_v3.py 1 --merge-pnl
 ```
 
-Monte Carlo output is saved to `chrispy-roberts-backtester/tmp/<timestamp>/dashboard.json`.
+## Output Files
 
-Standard backtest logs are saved to `backtests/<timestamp>.log`.
+Generated outputs are intentionally excluded from this public repository.
 
-Prosperity4btest logs are saved according to the command options you use inside `imc-round1/`.
+Common output locations:
+
+```text
+chrispy-roberts-backtester/tmp/<timestamp>/dashboard.json
+backtests/<timestamp>.log
+imc-round1/ generated logs, depending on prosperity4btest command options
+```
+
+These files are useful locally, but they are not tracked because they can become large and are generated during experiments.
+
+## Data
+
+The included CSV files are IMC Prosperity competition market data used for local analysis and backtesting.
+
+Generated logs, final submissions, local backtest outputs, virtual environments, and machine-specific files are excluded through `.gitignore`.
+
+## Notes
+
+This repository is for research, learning, and competition strategy development. It is not financial advice and is not intended for live trading.
